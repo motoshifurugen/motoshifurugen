@@ -34,8 +34,8 @@
 ###
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=motoshifurugen&locale=en&mode=weekly&theme=highcontrast&hide_border=true&border_radius=10&order=3" height="150" alt="streak graph"  />
-  <img src="https://github-trophies.vercel.app/?username=motoshifurugen&theme=darkhub&column=-1&row=1&margin-w=8&margin-h=8&no-frame=true" height="150" alt="trophy graph"  />
+  <img src="https://github-readme-stats.vercel.app/api?username=motoshifurugen&show_icons=true&theme=highcontrast&hide_border=true" height="150" alt="stats graph"  />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=motoshifurugen&layout=compact&theme=highcontrast&hide_border=true" height="150" alt="languages graph"  />
 </div>
 
 ###
