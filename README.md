@@ -35,7 +35,7 @@
 
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=motoshifurugen&locale=en&mode=weekly&theme=highcontrast&hide_border=true&border_radius=10&order=3" height="150" alt="streak graph"  />
-  <img src="https://github-profile-trophy.vercel.app?username=motoshifurugen&theme=darkhub&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=true&order=4" height="150" alt="trophy graph"  />
+  <img src="https://github-trophies.vercel.app/?username=motoshifurugen&theme=darkhub&column=-1&row=1&margin-w=8&margin-h=8&no-frame=true" height="150" alt="trophy graph"  />
 </div>
 
 ###
