@@ -33,10 +33,10 @@
 
 ###
 
-<div align="center">
+<!-- <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=motoshifurugen&show_icons=true&theme=highcontrast&hide_border=true" height="150" alt="stats graph"  />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=motoshifurugen&layout=compact&theme=highcontrast&hide_border=true" height="150" alt="languages graph"  />
-</div>
+</div> -->
 
 ###
 
