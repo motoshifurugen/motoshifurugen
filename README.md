@@ -39,7 +39,7 @@ const motoshi: NankurunaisaEngineer = {
   </a>
   &nbsp;
   <a href="https://note.com/nankurunaisa_eng">
-    <img src="https://img.shields.io/badge/note-41C9B4?style=for-the-badge&logo=note&logoColor=white" alt="note" />
+    <img src="https://img.shields.io/badge/note-ffffff?style=for-the-badge&logo=note&logoColor=333333" alt="note" />
   </a>
 </div>
 
