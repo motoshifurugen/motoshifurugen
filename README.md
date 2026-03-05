@@ -29,7 +29,7 @@ const motoshi: NankurunaisaDrivenEngineer = {
     <img src="https://img.shields.io/badge/Portfolio-Furugen's%20Island-008080?style=for-the-badge&logo=safari&logoColor=white" alt="Portfolio" />
   </a>
   &nbsp;
-  <a href="https://zenn.dev/mfurugen">
+  <a href="https://zenn.dev/motoshifurugen">
     <img src="https://img.shields.io/badge/Zenn-3EA8FF?style=for-the-badge&logo=zenn&logoColor=white" alt="Zenn" />
   </a>
   &nbsp;
@@ -37,7 +37,7 @@ const motoshi: NankurunaisaDrivenEngineer = {
     <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X (Twitter)" />
   </a>
   &nbsp;
-  <a href="https://note.com/nankurunaisa_eng">
+  <a href="https://note.com/cocoa_hearts21">
     <img src="https://img.shields.io/badge/note-ffffff?style=for-the-badge&logo=note&logoColor=333333" alt="note" />
   </a>
 </div>
