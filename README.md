@@ -1,32 +1,29 @@
-<img src="https://capsule-render.vercel.app/api?type=blur&color=gradient&customColorList=12,14,20,24&height=200&section=header&text=Hey%2C%20I'm%20Motoshi%20%F0%9F%91%8B&fontSize=60&fontColor=ffffff&animation=fadeIn" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=blur&color=gradient&customColorList=12,14,20,24&height=130&section=header&text=Hey%2C%20I'm%20Motoshi%20%F0%9F%96%96&fontSize=40&fontColor=ffffff&animation=fadeIn" width="100%" />
 
 ###
 
 <div align="center">
   <a href="https://readme-typing-svg.demolab.com">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00BFFF&center=true&vCenter=true&width=500&lines=Software+Engineer+%F0%9F%9A%80;Laravel+%2F+Vue+%2F+Next.js+Developer;Flutter+%E3%81%A7Mobile%E3%82%82%E4%BD%9C%E3%82%8C%E3%82%8B%E3%82%88;Blender%E3%81%A7%EF%BC%93D%E3%82%82%E3%81%A7%E3%81%8D%E3%82%8B%E8%AC%8E%E3%82%B9%E3%82%AD%E3%83%AB%F0%9F%8C%80;Coffee+%E2%86%92+Code+%E2%86%92+Repeat+%E2%98%95" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00BFFF&center=true&vCenter=true&width=500&lines=Software+Engineer+%F0%9F%9A%80;Crafting+Web+%26+Mobile+with+Next.js%2C+Vue+PHP+and+Python;Exploring+AI%2FLLM+Integration+%26+Marketing;Side+quests%3A+Developing+a+short+RPG+%26+Writing+a+Tanka;Code+%E2%86%92+Walk+around+%E2%86%92+Drink+Coffee" alt="Typing SVG" />
   </a>
 </div>
 
 ###
 
 ```typescript
-const motoshi = {
-  name:              "Motoshi Furugen",
-  location:          "Okinawa, Japan 🌺",
-  skills:            ["Laravel", "Vue", "Next.js", "Flutter", "Python", "Blender"],
-  currentlyLearning: ["AI/LLM integration", "Claude Code"],
-  funFact:           "Blenderで3Dモデルを作れるエンジニア（謎スキル）",
-  askMeAbout:        ["Web Dev", "Mobile Apps", "3D modeling", "沖縄そば🍜"],
-  contact:           "なんくるないさ 🤙",
+const motoshi: NankurunaisaEngineer = {
+  name:      "Motoshi Furugen",
+  base:      "Okinawa, Japan",
+  portfolio: "Furugen's Island",
+  techStack: ["Next.js", "TypeScript", "Laravel", "Flutter", "Python"],
+  sideQuests: [
+    "Developing a mobile app",
+    "Creating a short RPG",
+    "Writing a novel",
+  ],
+  mindset: "なんくるないさ",
 };
 ```
-
-###
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=motoshifurugen&color=00bfff&style=flat-square&label=Profile+Views" alt="Profile views" />
-</div>
 
 ###
 
@@ -72,12 +69,6 @@ const motoshi = {
 
 ###
 
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=motoshifurugen&theme=highcontrast&hide_border=true" alt="GitHub Streak" />
-</div>
-
-###
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/motoshifurugen/motoshifurugen/output/pacman-contribution-graph-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/motoshifurugen/motoshifurugen/output/pacman-contribution-graph.svg">
@@ -85,5 +76,3 @@ const motoshi = {
 </picture>
 
 ###
-
-<img src="https://capsule-render.vercel.app/api?type=blur&color=gradient&customColorList=12,14,20,24&height=120&section=footer&animation=fadeIn" width="100%" />
