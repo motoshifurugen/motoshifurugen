@@ -12,16 +12,14 @@
 
 ```typescript
 const motoshi: NankurunaisaEngineer = {
-  name:      "Motoshi Furugen",
   base:      "Okinawa, Japan",
-  portfolio: "Furugen's Island",
-  techStack: ["Next.js", "TypeScript", "Laravel", "Flutter", "Python"],
+  techStack: ["Next.js", "Vue.js", "PHP", "Python", "React Native"],
   sideQuests: [
-    "Developing a mobile app",
+    "Crafting generative art",
     "Creating a short RPG",
     "Writing a novel",
   ],
-  mindset: "なんくるないさ",
+  mindset: "なんくるないさ（It'll be all right.）",
 };
 ```
 
