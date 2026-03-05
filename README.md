@@ -11,7 +11,7 @@
 ###
 
 ```typescript
-const motoshi: NankurunaisaEngineer = {
+const motoshi: NankurunaisaDrivenEngineer = {
   base:      "Okinawa, Japan",
   techStack: ["Next.js", "Vue.js", "PHP", "Python", "React Native"],
   sideQuests: [
@@ -19,7 +19,7 @@ const motoshi: NankurunaisaEngineer = {
     "Creating a short RPG",
     "Writing a novel",
   ],
-  mindset: "なんくるないさ（It'll be all right.）",
+  mindset: "Nankurunaisa - It'll be all right.",
 };
 ```
 
