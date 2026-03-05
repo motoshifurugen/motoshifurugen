@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=blur&color=gradient&customColorList=12,14,20,24&height=130&section=header&text=Hey%2C%20I'm%20Motoshi%20%F0%9F%96%96&fontSize=40&fontColor=ffffff&animation=fadeIn" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=blur&color=gradient&customColorList=12,14,20,24&height=80&section=header&text=Hey%2C%20I'm%20Motoshi%20%F0%9F%96%96&fontSize=40&fontColor=ffffff&animation=fadeIn" width="100%" />
 
 ###
 
