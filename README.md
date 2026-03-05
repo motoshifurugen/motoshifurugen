@@ -28,6 +28,10 @@ const motoshi: NankurunaisaEngineer = {
 ###
 
 <div align="center">
+  <a href="https://furugen-island.com/my_site">
+    <img src="https://img.shields.io/badge/Portfolio-Furugen's%20Island-ff6b6b?style=for-the-badge&logo=safari&logoColor=white" alt="Portfolio" />
+  </a>
+  &nbsp;
   <a href="https://zenn.dev/mfurugen">
     <img src="https://img.shields.io/badge/Zenn-3EA8FF?style=for-the-badge&logo=zenn&logoColor=white" alt="Zenn" />
   </a>
