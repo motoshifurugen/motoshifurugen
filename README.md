@@ -23,6 +23,7 @@ const motoshi: NankurunaisaDrivenEngineer = {
 
 ###
 
+&nbsp;
 <div align="center">
   <a href="https://furugen-island.com/my_site">
     <img src="https://img.shields.io/badge/Portfolio-Furugen's%20Island-008080?style=for-the-badge&logo=safari&logoColor=white" alt="Portfolio" />
@@ -62,6 +63,7 @@ const motoshi: NankurunaisaDrivenEngineer = {
   <img width="8" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="32" alt="nextjs logo"  />
 </div>
+&nbsp;
 
 ###
 
