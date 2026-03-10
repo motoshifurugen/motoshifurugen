@@ -1,8 +1,4 @@
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=blur&color=gradient&customColorList=12,14,20,24&height=80&section=header&text=Hey%2C%20I'm%20Motoshi%20%F0%9F%96%96&fontSize=40&fontColor=2d3748&animation=fadeIn">
-  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=blur&color=gradient&customColorList=12,14,20,24&height=80&section=header&text=Hey%2C%20I'm%20Motoshi%20%F0%9F%96%96&fontSize=40&fontColor=ffffff&animation=fadeIn">
-  <img src="https://capsule-render.vercel.app/api?type=blur&color=gradient&customColorList=12,14,20,24&height=80&section=header&text=Hey%2C%20I'm%20Motoshi%20%F0%9F%96%96&fontSize=40&fontColor=ffffff&animation=fadeIn" width="100%" alt="Hey, I'm Motoshi" />
-</picture>
+<img src="https://capsule-render.vercel.app/api?type=blur&color=gradient&customColorList=12,14,20,24&height=80&section=header&text=Hey%2C%20I'm%20Motoshi%20%F0%9F%96%96&fontSize=40&fontColor=ffffff&animation=fadeIn" width="100%" />
 
 ###
 
