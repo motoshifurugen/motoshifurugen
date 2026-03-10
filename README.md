@@ -1,10 +1,18 @@
-<img src="https://capsule-render.vercel.app/api?type=blur&color=gradient&customColorList=12,14,20,24&height=80&section=header&text=Hey%2C%20I'm%20Motoshi%20%F0%9F%96%96&fontSize=40&fontColor=ffffff&animation=fadeIn" width="100%" />
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=blur&color=gradient&customColorList=12,14,20,24&height=80&section=header&text=Hey%2C%20I'm%20Motoshi%20%F0%9F%96%96&fontSize=40&fontColor=2d3748&animation=fadeIn">
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=blur&color=gradient&customColorList=12,14,20,24&height=80&section=header&text=Hey%2C%20I'm%20Motoshi%20%F0%9F%96%96&fontSize=40&fontColor=ffffff&animation=fadeIn">
+  <img src="https://capsule-render.vercel.app/api?type=blur&color=gradient&customColorList=12,14,20,24&height=80&section=header&text=Hey%2C%20I'm%20Motoshi%20%F0%9F%96%96&fontSize=40&fontColor=ffffff&animation=fadeIn" width="100%" alt="Hey, I'm Motoshi" />
+</picture>
 
 ###
 
 <div align="center">
   <a href="https://readme-typing-svg.demolab.com">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00BFFF&center=true&vCenter=true&width=500&lines=Software+Engineer+%F0%9F%9A%80;Crafting+App+with+Next.js%2C+Vue+and+PHP;Exploring+AI%2FLLM+Integration+%26+Marketing;Side+quests%3A+Writing+a+Tanka;Code+%E2%86%92+Walk+around+%E2%86%92+Drink+Coffee" alt="Typing SVG" />
+    <picture>
+      <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=0d47a1&center=true&vCenter=true&width=500&lines=Software+Engineer+%F0%9F%9A%80;Crafting+App+with+Next.js%2C+Vue+and+PHP;Exploring+AI%2FLLM+Integration+%26+Marketing;Side+quests%3A+Writing+a+Tanka;Code+%E2%86%92+Walk+around+%E2%86%92+Drink+Coffee">
+      <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00BFFF&center=true&vCenter=true&width=500&lines=Software+Engineer+%F0%9F%9A%80;Crafting+App+with+Next.js%2C+Vue+and+PHP;Exploring+AI%2FLLM+Integration+%26+Marketing;Side+quests%3A+Writing+a+Tanka;Code+%E2%86%92+Walk+around+%E2%86%92+Drink+Coffee">
+      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00BFFF&center=true&vCenter=true&width=500&lines=Software+Engineer+%F0%9F%9A%80;Crafting+App+with+Next.js%2C+Vue+and+PHP;Exploring+AI%2FLLM+Integration+%26+Marketing;Side+quests%3A+Writing+a+Tanka;Code+%E2%86%92+Walk+around+%E2%86%92+Drink+Coffee" alt="Typing SVG" />
+    </picture>
   </a>
 </div>
 
