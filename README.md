@@ -20,11 +20,9 @@
 ```typescript
 const motoshi: NankurunaisaDrivenEngineer = {
   base:       "Okinawa, Japan",
-  mbti:       "INFP-A",
   philosophy: "Shaping invisible data, much like physics decodes nature.",
   vision:     "Delivering exciting UX via design & art.",
   priority:   "Healthy mind, healthy code.",
-  mindset:    "Nankurunaisa - It'll be all right.",
 };
 ```
 
