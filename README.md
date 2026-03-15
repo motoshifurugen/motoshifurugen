@@ -18,7 +18,7 @@
 ###
 
 ```typescript
-const motoshi: NankurunaisaDrivenEngineer = {
+const motoshi: SoftwareEngineer = {
   base:       "Okinawa, Japan",
   philosophy: "Shaping invisible data, much like physics decodes nature.",
   vision:     "Delivering exciting UX via design & art.",
