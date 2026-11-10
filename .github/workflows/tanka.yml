@@ -1,0 +1,67 @@
+name: Draw today's tanka
+
+on:
+  schedule:
+    # 18:40 UTC = 03:40 JST, after cocoa-he.art picks the day's work at 03:20 JST
+    - cron: "40 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tanka
+  cancel-in-progress: false
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Restore fonts
+        id: fonts
+        uses: actions/cache@v4
+        with:
+          path: .fonts
+          key: fonts-${{ hashFiles('scripts/fetch-fonts.sh') }}
+
+      - name: Download fonts (SIL Open Font License 1.1)
+        if: steps.fonts.outputs.cache-hit != 'true'
+        run: bash scripts/fetch-fonts.sh .fonts
+
+      - name: Draw
+        run: node scripts/render-tanka.mjs
+        env:
+          FONT_DIR: .fonts
+          OUT_DIR: out
+
+      - name: Publish to the output branch
+        run: |
+          if [ ! -f out/tanka-light.png ] || [ ! -f out/tanka-dark.png ]; then
+            echo "No new images. Keeping the previous ones."
+            exit 0
+          fi
+          git fetch --depth=1 origin output
+          git worktree add --detach "$RUNNER_TEMP/output" FETCH_HEAD
+          cp out/tanka-light.png out/tanka-dark.png "$RUNNER_TEMP/output/"
+          cd "$RUNNER_TEMP/output"
+          git add tanka-light.png tanka-dark.png
+          if git diff --cached --quiet; then
+            echo "Images unchanged."
+            exit 0
+          fi
+          # Keep a single commit on the output branch so old images do not pile up.
+          export GIT_AUTHOR_NAME="github-actions[bot]" GIT_COMMITTER_NAME="github-actions[bot]"
+          export GIT_AUTHOR_EMAIL="41898282+github-actions[bot]@users.noreply.github.com"
+          export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+          commit=$(git commit-tree "$(git write-tree)" -m "Draw today's tanka")
+          git push --force origin "$commit:refs/heads/output"
