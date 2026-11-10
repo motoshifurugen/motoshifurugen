@@ -1,0 +1,17 @@
+{
+  "name": "motoshifurugen-profile",
+  "private": true,
+  "type": "module",
+  "description": "Draws today's tanka from cocoa-he.art for the GitHub profile README.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "fonts": "bash scripts/fetch-fonts.sh .fonts",
+    "render": "node scripts/render-tanka.mjs",
+    "preview": "FONT_DIR=.fonts node scripts/preview.mjs"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2"
+  }
+}
