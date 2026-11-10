@@ -55,7 +55,7 @@ export function validate(data) {
     throw new DataError("lines must be an array of 1 to 5 strings");
   for (const l of data.lines) {
     if (typeof l !== "string" || l.trim() === "") throw new DataError("lines contains an empty or non-string item");
-    if ([...l.trim()].length > 24) throw new DataError("a line is longer than 24 characters");
+    if ([...l.trim()].length > 40) throw new DataError("a line is longer than 40 characters");
   }
   if (!data.image || typeof data.image.url !== "string" || data.image.url === "")
     throw new DataError("image.url is missing");
@@ -70,7 +70,18 @@ const overlaps = (a0, a1, b0, b1) => a0 < b1 && b0 < a1;
 
 // Pick the largest font size (22px at most) where every column fits and the
 // date does not collide with a column.
+// cocoa-he.art joins the phrases inside a column with U+3000. When the columns
+// as given do not fit (e.g. the whole poem in one column), give each phrase its own column.
 export function layout(lines) {
+  return fit(lines) ?? fit(splitPhrases(lines));
+}
+
+function splitPhrases(lines) {
+  const phrases = lines.flatMap((chars) => chars.join("").split("　").filter(Boolean));
+  return phrases.length <= 5 ? phrases.map((p) => [...p]) : lines;
+}
+
+function fit(lines) {
   const dateSpots = [620, COL_RIGHT - DATE.width];
   // For long columns, tighten the spacing between characters before shrinking the type.
   for (let fs = 22; fs >= 12; fs -= 0.5) {
