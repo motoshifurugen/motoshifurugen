@@ -7,7 +7,6 @@
 </a>
 
 <p align="center">Code, photographs and tanka from Okinawa.</p>
-<p align="center"><sub>写真と歌は cocoa-he.art から毎朝ひとつ選ばれます。</sub></p>
 
 ```typescript
 const motoshi: SoftwareEngineer = {
