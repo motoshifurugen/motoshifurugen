@@ -1,7 +1,8 @@
 // Draw "today's tanka" from cocoa-he.art into tanka-light.png / tanka-dark.png.
 //
 // Data: GET $TODAY_URL (default https://cocoa-he.art/today.json)
-//   {"date":"2026-11-10","lines":["...","..."],"image":{"url":"https://...","width":1200,"height":800,"alt":"..."},"url":"https://..."}
+//   {"date":"2026-11-10","lines":["...","..."],"image":{"url":"https://...","width":1280,"height":1600,"alt":"..."},"url":"https://..."}
+// The photo is drawn in a 4:5 frame. A photo with another aspect ratio is cropped at the centre.
 // When the data is missing (404, network error, unexpected shape, bad image) the
 // script logs the reason and exits 0 without writing anything, so the images
 // from the previous day stay on the output branch.
@@ -17,18 +18,23 @@ import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { Resvg } from "@resvg/resvg-js";
 
+// 880 x 550 at zoom 2 = 1760 x 1100 px. cocoa-he.art crops every photo to 4:5,
+// so the photo frame is 4:5 as well and the poem's columns share its height.
 export const W = 880;
-export const H = 440;
-const PHOTO = { x: 40, y: 40, w: 540, h: 360 };
-const COL_RIGHT = 805; // right edge of the first (rightmost) column
-const COL_TOP = 56;
-const COL_BOTTOM = 400; // same as the photo's bottom edge
-const COL_MIN_LEFT = 604; // keep clear of the photo
-const DATE = { size: 14, baseline: 381, top: 366, width: 86 };
+export const H = 550;
+const PHOTO = { x: 64, y: 55, w: 352, h: 440 }; // 4:5
+const COL_RIGHT = 816; // right edge of the first (rightmost) column
+const COL_TOP = 71;
+const COL_BOTTOM = 495; // same as the photo's bottom edge
+const COL_MIN_LEFT = 456; // keep clear of the photo
+const MAX_FS = 30;
+const MIN_FS = 14;
+const DATE = { size: 16, baseline: 495, top: 478, width: 98 };
 
+// Warm paper and ink, after the work pages on cocoa-he.art.
 export const THEMES = {
-  light: { paper: "#FAF8F3", ink: "#1F2328", muted: "#59636E" },
-  dark: { paper: "#161B22", ink: "#E6EDF3", muted: "#9198A1" },
+  light: { paper: "#F2E8DC", ink: "#3B2A21", muted: "#6E5A4C" },
+  dark: { paper: "#1E1A17", ink: "#EDE3D6", muted: "#A79A8C" },
 };
 
 const SERIF = "Noto Serif JP";
@@ -68,7 +74,7 @@ export function validate(data) {
 
 const overlaps = (a0, a1, b0, b1) => a0 < b1 && b0 < a1;
 
-// Pick the largest font size (22px at most) where every column fits and the
+// Pick the largest font size (MAX_FS at most) where every column fits and the
 // date does not collide with a column.
 // cocoa-he.art joins the phrases inside a column with U+3000. When the columns
 // as given do not fit (e.g. the whole poem in one column), give each phrase its own column.
@@ -82,9 +88,9 @@ function splitPhrases(lines) {
 }
 
 function fit(lines) {
-  const dateSpots = [620, COL_RIGHT - DATE.width];
+  const dateSpots = [COL_MIN_LEFT, COL_RIGHT - DATE.width];
   // For long columns, tighten the spacing between characters before shrinking the type.
-  for (let fs = 22; fs >= 12; fs -= 0.5) {
+  for (let fs = MAX_FS; fs >= MIN_FS; fs -= 0.5) {
     for (const lead of [1.45, 1.3, 1.15]) {
       const found = tryLayout(lines, fs, lead, dateSpots);
       if (found) return found;
