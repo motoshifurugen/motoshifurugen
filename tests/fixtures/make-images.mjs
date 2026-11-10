@@ -26,6 +26,7 @@ function scene(w, h) {
 for (const [name, w, h] of [
   ["landscape.png", 900, 600],
   ["portrait.png", 600, 900],
+  ["portrait-4x5.png", 800, 1000],
 ]) {
   const png = new Resvg(scene(w, h)).render().asPng();
   await writeFile(path.join(dir, name), png);
